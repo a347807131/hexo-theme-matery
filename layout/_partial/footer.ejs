@@ -1,4 +1,4 @@
-<footer class="page-footer bg-color">
+<footer class="">
     <div class="container row center-align" style="margin-bottom: <% if (theme.time.enable) { %>15<% } else { %>0<% } %>px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -29,7 +29,8 @@
             <% } %>
             <br>
             <% if (theme.time.enable) { %>
-            <span id="sitetime">载入运行时间...</span>
+                <a class="my-face">(●'◡'●)ﾉ♥</a>
+                <span id="sitetime">载入运行时间...</span>
             <script>
                 function siteTime() {
                     var seconds = 1000;
@@ -62,7 +63,7 @@
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        document.getElementById("sitetime").innerHTML = "本站已萌萌哒运行 " + diffDays + " 天 " + diffHours +
                             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;

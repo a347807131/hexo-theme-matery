@@ -1816,9 +1816,19 @@ thead {
 /*尾部样式*/
 footer {
     padding-bottom: 1px;
+    background-image:
+            linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)),
+            url("https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/header-leg.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 170px;
+
+    display: flex;
+    justify-content: center;/*实现水平居中*/
+    align-items:center; /*实现垂直居中*/
 }
 
-footer .social-statis {
+footer .sociacenter-alignl-statis {
     margin-top: 10px;
     position: relative;
 }

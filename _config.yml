@@ -66,9 +66,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-
+  title: A extraction from The Great Gatsby
+  text: They had never been closer in their month of love, nor communicated more profoundly one with another than when she brushed silent lips agains his coat’s shoulder or when he touched the end of her fingers, gently, as though she was asleep.
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
@@ -200,8 +199,7 @@ clicklove:
 profile:
   avatar: /medias/avatar.jpg
   career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
-
+  introduction: There was a ripe mystery about it, a hint of bedrooms upstairs more beautiful and cool than other bedrooms, of gay and radiant activities taking place through its corridors, and of romances that were not musty and laid away already in lavender but fresh and breathing and redolent of this year’s shining motor cars and of dances whose flowers were scarcely withered.
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
@@ -339,8 +337,8 @@ busuanziStatistics:
 # Add google analytics configuration
 # 添加 Google Analytics 配置
 googleAnalytics:
-  enable: false
-  id:
+  enable: true
+  id: UA-156542505-1
 
 # Add baidu analytics configuration
 # 添加 baidu Analytics 配置
@@ -415,6 +413,7 @@ featureImages:
 - /medias/featureimages/20.jpg
 - /medias/featureimages/21.jpg
 - /medias/featureimages/22.jpg
+- /medias/featureimages/22.jpg
 - https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/header-leg.jpg
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -488,11 +487,10 @@ subtitle:
   loop: true # 是否循环
   showCursor: true # 是否显示光标
   startDelay: 300 # 开始延迟
-  typeSpeed: 100 # 打字速度
+  typeSpeed: 150 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
-
+  sub1: 事无尽美，殊途同归。
+  sub2: Nothing perfect, Nothing special.
 # 手机二级菜单.
 navMenu:
   mleft: false # 二级侧栏子菜单是否对齐左边
@@ -513,7 +511,7 @@ icp:
   url: # 备案链接
   text: # 备案信息
 
-# CDN访问加速 
+# CDN访问加速
 # 第一次使用本功能，一定要先配置url，再`hexo cl&&hexo g&&hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
 # 如果必须要使用国内的coding或者gittee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
 # URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
