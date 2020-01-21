@@ -126,11 +126,11 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  github:  https://github.com/a347807131
+  email: civin@bupt.edu.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  qq: 947124233
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -141,6 +141,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
+  number: true
   heading: h2, h3, h4
   collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
@@ -414,7 +415,6 @@ featureImages:
 - /medias/featureimages/21.jpg
 - /medias/featureimages/22.jpg
 - /medias/featureimages/22.jpg
-- https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/header-leg.jpg
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
 
