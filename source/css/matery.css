@@ -875,8 +875,31 @@ article a {
     color: #525f7f;
     text-transform: none !important;
 }
+#articleContent > hr{
+    color: #4c4948;
+    font-size: 14px;
+    font-family: Lato,Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,"Microsoft JhengHei","MicrMicrosoft YaHei",Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 2;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    position: relative;
+    margin: 2rem auto;
+    width: calc(100% - 4px);
+    border: 2px dashed #a4d8fa;
+    background: #fff;
+    content: "::before";
+}
+/*#articleContent > hr:before{*/
+/*    position: absolute;*/
+/*    left: 5%;*/
+/*    z-index: 1;*/
+/*    font: normal normal normal 14px / 1 FontAwesome;*/
+/*    font-size: 20px;*/
+/*    transition: all 1s ease-in-out;*/
+/*}*/
 
-article a:hover {
+#article a:hover {
     font-weight: bold;
     color: #42b983;
     text-decoration: underline;
