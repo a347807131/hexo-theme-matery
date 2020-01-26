@@ -81,7 +81,7 @@ music:
   order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: false # 列表默认折叠
+  listFolded: true # 列表默认折叠
   listMaxHeight: #列表最大高度
 
 # Whether to display the videos.
@@ -198,7 +198,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
+  avatar: https://avatars1.githubusercontent.com/u/24996382?s=460&v=4
   career: Software Engineer
   introduction: There was a ripe mystery about it, a hint of bedrooms upstairs more beautiful and cool than other bedrooms, of gay and radiant activities taking place through its corridors, and of romances that were not musty and laid away already in lavender but fresh and breathing and redolent of this year’s shining motor cars and of dances whose flowers were scarcely withered.
 # config my projects informations in about page.
