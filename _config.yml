@@ -287,7 +287,7 @@ gitment:
 # Disqus评论模块的配置，默认为不激活
 disqus:
   enable: true
-  shortname: hexo-15
+  shortname: jgatsby
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
