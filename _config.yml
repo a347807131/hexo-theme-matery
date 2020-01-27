@@ -66,7 +66,7 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: A extraction from The Great Gatsby
+  title: An extraction from The Great Gatsby
   text: They had never been closer in their month of love, nor communicated more profoundly one with another than when she brushed silent lips agains his coat’s shoulder or when he touched the end of her fingers, gently, as though she was asleep.
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -127,7 +127,7 @@ indexbtn:
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/a347807131
-  email: civin@bupt.edu.com
+  email: civin@bupt.edu.cn
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 947124233
