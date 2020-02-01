@@ -26,6 +26,9 @@ menu:
   Medias:
     icon: fas fa-list
     children:
+      - name: Moments
+        url: /moments
+        icon: fas fa-comments
       - name: Musics
         url: /musics
         icon: fas fa-music
