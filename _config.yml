@@ -202,7 +202,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: https://avatars1.githubusercontent.com/u/24996382?s=460&v=4
+  avatar: /medias/avatar.gif
   career: Software Engineer
   introduction: There was a ripe mystery about it, a hint of bedrooms upstairs more beautiful and cool than other bedrooms, of gay and radiant activities taking place through its corridors, and of romances that were not musty and laid away already in lavender but fresh and breathing and redolent of this year’s shining motor cars and of dances whose flowers were scarcely withered.
 # config my projects informations in about page.
