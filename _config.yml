@@ -198,7 +198,14 @@ postInfo:
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
   enable: true
-
+# 动态标题特效
+visible:
+  enable: true
+  title:
+    #离开
+    off: Σ(っ °Д °;)っ喔哟，崩溃啦！
+    #返回
+    back: φ(゜▽゜*)♪咦，又好了！
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
