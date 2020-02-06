@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- theme.libs.css.aplayer %>">
 <div class="<% if(!theme.music.fixed) { %>music-player<% } %>">
-    <% if (!theme.music.fixed && theme.music.title.show) { %>
+    <% if (!theme.music.fixed && theme.music.title.enable) { %>
         <div class="title center-align">
-            <i class="fas fa-music"></i>&nbsp;&nbsp;<%- theme.music.title %>
+            <i class="fas fa-music"></i>&nbsp;&nbsp;<%- theme.music.title.show %>
         </div>
-    <% } %>
+    <% } %> x
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
+                   server="<%- theme.music.server%>"
+                   type="<%- theme.music.type%>"
+                   id="<%- theme.music.id%>"
                    fixed='<%- theme.music.fixed ? 'true':'false' %>'
                    autoplay='<%- theme.music.autoplay === 'true' %>'
                    theme:='<%- theme.music.theme %>'
