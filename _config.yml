@@ -201,6 +201,9 @@ postInfo:
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
   enable: true
+# 鼠标指针特效
+cursor:
+  enable: true
 # 动态标题特效
 visible:
   enable: true
@@ -458,7 +461,9 @@ daovoice:
 tidio:
   enable: true
   public_key: 8amsnygmief3nrfr1ja80eds2yuecwcn
-
+#樱花飘落特效
+sakura:
+  enable: true
 #背景canvas-nest
 canvas_nest:
   enable: false

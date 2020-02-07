@@ -5,7 +5,15 @@
 <body>
 <%- partial('_partial/header') %>
 <%- body %>
-
+<% if(theme.sakura.enable){ %>
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.8/source/js/sakura.js"><\/script>');
+        }
+    </script>
+<% } %>
 <%- partial('_partial/footer') %>
 
 <%- partial('_partial/search') %>
@@ -17,6 +25,9 @@
 <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.scrollProgress %>"></script>
 <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.lightgallery %>"></script>
 <script src="<%- theme.jsDelivr.url %>/js/matery.js"></script>
+<% if(theme.cursor.enable){ %>
+    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.8/source/js/cursor.js"/>
+<% } %>
 
 <%- partial('_partial/google-analytics') %>
 <%- partial('_partial/baidu-analytics') %>
@@ -102,7 +113,7 @@
 <% if (theme.visible.enable) { %>
     <script type="text/javascript"> var OriginTitile = document.title, st;
         document.addEventListener("visibilitychange", function () {
-            document.hidden ? (document.title = "<%- theme.visible.title.off%>", clearTimeout(st)) : (document.title = "<%- theme.visible.title.back%>", st = setTimeout(function () {
+            document.hidden ? (document.title = "<%- theme.visible.title.off %>", clearTimeout(st)) : (document.title = "<%- theme.visible.title.back %>", st = setTimeout(function () {
                 document.title = OriginTitile
             }, 3e3))
         })
