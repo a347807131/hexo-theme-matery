@@ -5,7 +5,7 @@
 <body>
 <%- partial('_partial/header') %>
 <%- body %>
-<% if(theme.sakura.enable){ %>
+<% if(theme.sakura.enable&& !is_post()){ %>
     <script type="text/javascript">
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
