@@ -282,7 +282,7 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: true
+  enable: false
   owner: a347807131
   repo: gitalk_comments
   oauth:
@@ -309,8 +309,8 @@ disqus:
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
 livere:
-  enable: false
-  uid:
+  enable: true
+  uid: MTAyMC80ODc5My8yNTI4Nw==
 
 # The configuration of the Valine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
