@@ -37,6 +37,7 @@ body {
     /*background-color: #eaeaea;*/
     margin: 0;
     color: #34495e;
+    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto;
 }
 
 h1 {
@@ -390,6 +391,7 @@ header .side-nav .social-link {
     font-size: 1rem;
     color: #fff;
     border: 2px solid #fff;
+    /*background-color: rgba(0,0,0,.5);*/
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
@@ -595,6 +597,10 @@ header .go-back i {
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #eee;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .5);
+    padding: 15px;
+    margin-top: 22px;
 }
 
 .bg-cover .post-title {
@@ -1847,9 +1853,6 @@ thead {
 /*尾部样式*/
 footer {
     padding-bottom: 1px;
-    background-image:
-            linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)),
-            url("https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/header-leg.jpg");
     background-size: cover;
     background-position: bottom center;
     height: 170px;
