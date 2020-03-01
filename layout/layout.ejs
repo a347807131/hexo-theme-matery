@@ -1,11 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="<%= config.language %>">
 <%- partial('_partial/head') %>
-
+<style>
+    body {
+        /*background-color: #eaeaea;*/
+        margin: 0;
+        color: #34495e;
+    <%if(theme.cursor.enable){%> cursor: url("<%- theme.jsDelivr.url %>/libs/cursor/normal.cur"), auto;
+    <%}%>
+    }
+</style>
 <body>
 <%- partial('_partial/header') %>
 <%- body %>
-<% if(theme.sakura.enable&& !is_post()){ %>
+<% if(theme.sakura.enable && !is_post()){ %>
     <script type="text/javascript">
         //只在桌面版网页启用特效
         var windowWidth = $(window).width();
@@ -25,9 +33,6 @@
 <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.scrollProgress %>"></script>
 <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.lightgallery %>"></script>
 <script src="<%- theme.jsDelivr.url %>/js/matery.js"></script>
-<% if(theme.cursor.enable){ %>
-    <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.8/source/js/cursor.js"/>
-<% } %>
 
 <%- partial('_partial/google-analytics') %>
 <%- partial('_partial/baidu-analytics') %>

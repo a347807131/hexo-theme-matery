@@ -33,13 +33,6 @@
     }
 }
 
-body {
-    /*background-color: #eaeaea;*/
-    margin: 0;
-    color: #34495e;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto;
-}
-
 h1 {
     margin: 48px 0 22px -5px;
     font-size: 2.0rem;
@@ -538,6 +531,22 @@ header .go-back i {
     font-size: 1.6rem;
     font-weight: 200;
     line-height: 56px;
+}
+
+#banner_wave_1 {
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, .1);
+    color: #404040;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+    box-sizing: border-box;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    width: 400%;
+    transition-duration: .4s, .4s;
+    display: none;
+    left: -685.129px;
 }
 
 /* 背景图效果. */
