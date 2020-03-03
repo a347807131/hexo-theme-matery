@@ -464,7 +464,7 @@ daovoice:
 
 # Tidio online contact
 tidio:
-  enable: true
+  enable: false
   public_key: 8amsnygmief3nrfr1ja80eds2yuecwcn
 #樱花飘落特效
 sakura:
