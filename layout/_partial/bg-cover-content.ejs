@@ -3,56 +3,57 @@
         <div class="brand">
             <div class="title center-align">
                 <% if (config.subtitle && config.subtitle.length > 0) { %>
-                    <%= config.subtitle %>
+                <%= config.subtitle %>
                 <% } else { %>
-                    subtitle
+                subtitle
                 <% } %>
             </div>
 
             <div class="description center-align">
                 <% if (theme.subtitle.enable) { %>
-                    <span id="subtitle"></span>
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                    <script>
-                        var typed = new Typed("#subtitle", {
-                            strings: ['<%= theme.subtitle.sub1 %>', '<%= theme.subtitle.sub2 %>'],
-                            startDelay: '<%= theme.subtitle.startDelay %>',
-                            typeSpeed: '<%= theme.subtitle.typeSpeed %>',
-                            loop: '<%= theme.subtitle.loop %>',
-                            backSpeed: '<%= theme.subtitle.backSpeed %>',
-                            showCursor: '<%= theme.subtitle.showCursor %>'
-                        });
-                    </script>
-                <% } else{ %>
-                    <!-- 一言API -->
-                    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-                    <script>
-                        fetch('https://v1.hitokoto.cn')
-                            .then(function (res) {
-                                return res.json();
-                            })
-                            .then(function (data) {
-                                var hitokoto = document.getElementById('hitokoto');
-                                hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
-                            })
-                            .catch(function (err) {
-                                console.error(err);
-                            })
-                    </script>
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['<%= theme.subtitle.sub1 %>','<%= theme.subtitle.sub2 %>'],
+                        startDelay: <%= theme.subtitle.startDelay %>,
+                        typeSpeed: <%= theme.subtitle.typeSpeed %>,
+                        loop: <%= theme.subtitle.loop %>,
+                        backSpeed: <%= theme.subtitle.backSpeed %>,
+                        showCursor: <%= theme.subtitle.showCursor %>
+                    });
+                </script>
+                <% } else { %>
+                        <!-- 一言API -->
+                        <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+                        <script>
+                            fetch('https://v1.hitokoto.cn')
+                                .then(function (res) {
+                                    return res.json();
+                                })
+                                .then(function (data) {
+                                    var hitokoto = document.getElementById('hitokoto');
+                                    hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
+                                })
+                                .catch(function (err) {
+                                    console.error(err);
+                                })
+                        </script>
                         <strong style="font-size: large;"><p id="hitokoto">正在加载一言...</p></strong>
-                    <% } %>
+                <% } %>
             </div>
         </div>
     </div>
 </div>
 
 <% if (theme.banner.enable) { %>
-    <script>
-        // 每天切换 banner 图.  Switch banner image every day.
-        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %>/medias/banner/' + new Date().getDay() + '.jpg)');
-    </script>
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
 <% } else { %>
-    <script>
-        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %>/medias/banner/0.jpg)');
-    </script>
+<script>
+    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
+</script>
 <% } %>

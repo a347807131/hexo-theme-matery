@@ -33,6 +33,14 @@
     }
 }
 
+body {
+    background-color: #eaeaea;
+    margin: 0;
+    color: #34495e;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 h1 {
     margin: 48px 0 22px -5px;
     font-size: 2.0rem;
@@ -229,8 +237,8 @@ mark {
 }
 
 .card {
-    background-color: #f7f7f7;
     border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
 .card .card-image img {
@@ -244,7 +252,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%);
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -383,19 +391,18 @@ header .side-nav .social-link {
     line-height: 45px;
     font-size: 1rem;
     color: #fff;
-    border: 2px solid #fff;
-    /*background-color: rgba(0,0,0,.5);*/
+    border: 1px solid #fff;
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
 }
 
 .cover-btns a:hover {
-    border: 2px solid #e81706;
-    background-color: #e81706;
+    border: 1px solid #f44336;
+    background-color: #f44336;
     box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
-    0 4px 23px 0 rgba(0, 0, 0, 0.12),
-    0 8px 10px -5px rgba(233, 30, 99, 0.2);
+            0 4px 23px 0 rgba(0, 0, 0, 0.12),
+            0 8px 10px -5px rgba(233, 30, 99, 0.2);
 }
 
 .cover-btns a i {
@@ -409,7 +416,7 @@ header .side-nav .social-link {
     -webkit-animation: scroll-down 1.5s infinite;
     -moz-animation: scroll-down 1.5s infinite;
     -o-animation: scroll-down 1.5s infinite;
-    -ms-animation: scroll-down1 .5s infinite;
+    -ms-animation: scroll-down1.5s infinite;
     animation: scroll-down 1.5s infinite;
 }
 
@@ -533,22 +540,6 @@ header .go-back i {
     line-height: 56px;
 }
 
-#banner_wave_1 {
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, .1);
-    color: #404040;
-    font-size: 15px;
-    line-height: 1.5;
-    font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
-    box-sizing: border-box;
-    height: 65px;
-    position: absolute;
-    bottom: 0;
-    width: 400%;
-    transition-duration: .4s, .4s;
-    display: none;
-    left: -685.129px;
-}
-
 /* 背景图效果. */
 .bg-cover {
     position: relative;
@@ -572,8 +563,8 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    /*-webkit-animation: rainbow 60s infinite;*/
-    /*animation: rainbow 60s infinite;*/
+    -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite;
 }
 
 .bg-cover:before,
@@ -606,10 +597,6 @@ header .go-back i {
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #eee;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, .5);
-    padding: 15px;
-    margin-top: 22px;
 }
 
 .bg-cover .post-title {
@@ -898,32 +885,7 @@ article a {
     text-transform: none !important;
 }
 
-#articleContent > hr {
-    color: #4c4948;
-    font-size: 14px;
-    font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, "Microsoft JhengHei", "MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
-    line-height: 2;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    position: relative;
-    margin: 2rem auto;
-    width: calc(100% - 4px);
-    border: 2px dashed #a4d8fa;
-    background: #fff;
-    content: "::before";
-}
-
-/*#articleContent > hr:before{*/
-/*    position: absolute;*/
-/*    left: 5%;*/
-/*    z-index: 1;*/
-/*    font: normal normal normal 14px / 1 FontAwesome;*/
-/*    font-size: 20px;*/
-/*    transition: all 1s ease-in-out;*/
-/*}*/
-
-#article a:hover {
+article a:hover {
     font-weight: bold;
     color: #42b983;
     text-decoration: underline;
@@ -1071,8 +1033,8 @@ article .article-tags .chip {
 
 #artDetail .card {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
-    0 5px 15px rgba(0, 0, 0, .07),
-    0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+        0 5px 15px rgba(0, 0, 0, .07),
+        0 2px 5px -5px rgba(0, 0, 0, .1) !important;
 }
 
 #artDetail .tag-cate {
@@ -1211,7 +1173,7 @@ article .article-tags .chip {
 
 #articleContent p {
     margin: 2px 2px 10px;
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     line-height: 1.85rem;
 }
 
@@ -1864,177 +1826,11 @@ thead {
 /*尾部样式*/
 footer {
     padding-bottom: 1px;
-    background-size: cover;
-    background-position: bottom center;
-    height: 170px;
-
-    display: flex;
-    justify-content: center; /*实现水平居中*/
-    align-items: center; /*实现垂直居中*/
 }
 
-footer .sociacenter-alignl-statis {
+footer .social-statis {
     margin-top: 10px;
     position: relative;
-}
-
-.my-face {
-    animation: my-face 5s infinite ease-in-out;
-    display: inline-block;
-    margin: 0 5px;
-}
-
-@keyframes my-face {
-    2% {
-        transform: translate(0, 1.5px) rotate(1.5deg);
-    }
-    4% {
-        transform: translate(0, -1.5px) rotate(-0.5deg);
-    }
-    6% {
-        transform: translate(0, 1.5px) rotate(-1.5deg);
-    }
-    8% {
-        transform: translate(0, -1.5px) rotate(-1.5deg);
-    }
-    10% {
-        transform: translate(0, 2.5px) rotate(1.5deg);
-    }
-    12% {
-        transform: translate(0, -0.5px) rotate(1.5deg);
-    }
-    14% {
-        transform: translate(0, -1.5px) rotate(1.5deg);
-    }
-    16% {
-        transform: translate(0, -0.5px) rotate(-1.5deg);
-    }
-    18% {
-        transform: translate(0, 0.5px) rotate(-1.5deg);
-    }
-    20% {
-        transform: translate(0, -1.5px) rotate(2.5deg);
-    }
-    22% {
-        transform: translate(0, 0.5px) rotate(-1.5deg);
-    }
-    24% {
-        transform: translate(0, 1.5px) rotate(1.5deg);
-    }
-    26% {
-        transform: translate(0, 0.5px) rotate(0.5deg);
-    }
-    28% {
-        transform: translate(0, 0.5px) rotate(1.5deg);
-    }
-    30% {
-        transform: translate(0, -0.5px) rotate(2.5deg);
-    }
-    32% {
-        transform: translate(0, 1.5px) rotate(-0.5deg);
-    }
-    34% {
-        transform: translate(0, 1.5px) rotate(-0.5deg);
-    }
-    36% {
-        transform: translate(0, -1.5px) rotate(2.5deg);
-    }
-    38% {
-        transform: translate(0, 1.5px) rotate(-1.5deg);
-    }
-    40% {
-        transform: translate(0, -0.5px) rotate(2.5deg);
-    }
-    42% {
-        transform: translate(0, 2.5px) rotate(-1.5deg);
-    }
-    44% {
-        transform: translate(0, 1.5px) rotate(0.5deg);
-    }
-    46% {
-        transform: translate(0, -1.5px) rotate(2.5deg);
-    }
-    48% {
-        transform: translate(0, -0.5px) rotate(0.5deg);
-    }
-    50% {
-        transform: translate(0, 0.5px) rotate(0.5deg);
-    }
-    52% {
-        transform: translate(0, 2.5px) rotate(2.5deg);
-    }
-    54% {
-        transform: translate(0, -1.5px) rotate(1.5deg);
-    }
-    56% {
-        transform: translate(0, 2.5px) rotate(2.5deg);
-    }
-    58% {
-        transform: translate(0, 0.5px) rotate(2.5deg);
-    }
-    60% {
-        transform: translate(0, 2.5px) rotate(2.5deg);
-    }
-    62% {
-        transform: translate(0, -0.5px) rotate(2.5deg);
-    }
-    64% {
-        transform: translate(0, -0.5px) rotate(1.5deg);
-    }
-    66% {
-        transform: translate(0, 1.5px) rotate(-0.5deg);
-    }
-    68% {
-        transform: translate(0, -1.5px) rotate(-0.5deg);
-    }
-    70% {
-        transform: translate(0, 1.5px) rotate(0.5deg);
-    }
-    72% {
-        transform: translate(0, 2.5px) rotate(1.5deg);
-    }
-    74% {
-        transform: translate(0, -0.5px) rotate(0.5deg);
-    }
-    76% {
-        transform: translate(0, -0.5px) rotate(2.5deg);
-    }
-    78% {
-        transform: translate(0, -0.5px) rotate(1.5deg);
-    }
-    80% {
-        transform: translate(0, 1.5px) rotate(1.5deg);
-    }
-    82% {
-        transform: translate(0, -0.5px) rotate(0.5deg);
-    }
-    84% {
-        transform: translate(0, 1.5px) rotate(2.5deg);
-    }
-    86% {
-        transform: translate(0, -1.5px) rotate(-1.5deg);
-    }
-    88% {
-        transform: translate(0, -0.5px) rotate(2.5deg);
-    }
-    90% {
-        transform: translate(0, 2.5px) rotate(-0.5deg);
-    }
-    92% {
-        transform: translate(0, 0.5px) rotate(-0.5deg);
-    }
-    94% {
-        transform: translate(0, 2.5px) rotate(0.5deg);
-    }
-    96% {
-        transform: translate(0, -0.5px) rotate(1.5deg);
-    }
-    98% {
-        transform: translate(0, -1.5px) rotate(-0.5deg);
-    }
-    0%, 100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
 }
 
 footer a {
