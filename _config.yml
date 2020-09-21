@@ -33,15 +33,6 @@ menu:
       - name: Moments
         url: /moments
         icon: fas fa-comments
-      - name: Musics
-        url: /musics
-        icon: fas fa-music
-      - name: Movies
-        url: /movies
-        icon: fas fa-film
-      - name: Books
-        url: /books
-        icon: fas fa-book
       - name: Galleries
         url: /galleries
         icon: fas fa-image
@@ -122,8 +113,8 @@ recommend:
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
-favicon: /favicon.png
-logo: /medias/logo.png
+favicon: /favicon.svg
+logo: /medias/logo.svg
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
