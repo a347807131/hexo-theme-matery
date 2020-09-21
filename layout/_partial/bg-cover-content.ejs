@@ -1,13 +1,171 @@
+<style type="text/css">
+    .center-text {
+        margin: auto;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 80px;
+        text-transform: uppercase
+    }
+
+    .glitch {
+        position: relative;
+        color: #fff;
+        mix-blend-mode: lighten
+    }
+
+    .glitch:before, .glitch:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        clip: rect(0, 0, 0, 0)
+    }
+
+    .glitch:before {
+        left: -1px;
+        text-shadow: 1px 0 #ff3f1a
+    }
+
+    .glitch:after {
+        left: 1px;
+        text-shadow: -1px 0 #00a7e0
+    }
+
+    .glitch:hover:before {
+        text-shadow: 4px 0 #ff3f1a;
+        animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
+    }
+
+    .glitch:hover:after {
+        text-shadow: -5px 0 #00a7e0;
+        animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse
+    }
+
+    @-webkit-keyframes glitch-loop-1 {
+        0% {
+            clip: rect(36px, 9999px, 9px, 0)
+        }
+
+        25% {
+            clip: rect(25px, 9999px, 99px, 0)
+        }
+
+        50% {
+            clip: rect(50px, 9999px, 102px, 0)
+        }
+
+        75% {
+            clip: rect(30px, 9999px, 92px, 0)
+        }
+
+        100% {
+            clip: rect(91px, 9999px, 98px, 0)
+        }
+    }
+
+    @keyframes glitch-loop-1 {
+        0% {
+            clip: rect(36px, 9999px, 9px, 0)
+        }
+
+        25% {
+            clip: rect(25px, 9999px, 99px, 0)
+        }
+
+        50% {
+            clip: rect(50px, 9999px, 102px, 0)
+        }
+
+        75% {
+            clip: rect(30px, 9999px, 92px, 0)
+        }
+
+        100% {
+            clip: rect(91px, 9999px, 98px, 0)
+        }
+    }
+
+    @-webkit-keyframes glitch-loop-2 {
+        0% {
+            top: -1px;
+            left: 1px;
+            clip: rect(65px, 9999px, 119px, 0)
+        }
+
+        25% {
+            top: -6px;
+            left: 4px;
+            clip: rect(79px, 9999px, 19px, 0)
+        }
+
+        50% {
+            top: -3px;
+            left: 2px;
+            clip: rect(68px, 9999px, 11px, 0)
+        }
+
+        75% {
+            top: 0;
+            left: -4px;
+            clip: rect(95px, 9999px, 53px, 0)
+        }
+
+        100% {
+            top: -1px;
+            left: -1px;
+            clip: rect(31px, 9999px, 149px, 0)
+        }
+    }
+
+    @keyframes glitch-loop-2 {
+        0% {
+            top: -1px;
+            left: 1px;
+            clip: rect(65px, 9999px, 119px, 0)
+        }
+
+        25% {
+            top: -6px;
+            left: 4px;
+            clip: rect(79px, 9999px, 19px, 0)
+        }
+
+        50% {
+            top: -3px;
+            left: 2px;
+            clip: rect(68px, 9999px, 11px, 0)
+        }
+
+        75% {
+            top: 0;
+            left: -4px;
+            clip: rect(95px, 9999px, 53px, 0)
+        }
+
+        100% {
+            top: -1px;
+            left: -1px;
+            clip: rect(31px, 9999px, 149px, 0)
+        }
+    }
+</style>
 <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
-            <div class="title center-align">
+            <h1 class="title center-align center-text glitch is-glitching"
+                data-text="
                 <% if (config.subtitle && config.subtitle.length > 0) { %>
-                <%= config.subtitle %>
-                <% } else { %>
+                    <%= config.subtitle %>
+                <% } else { %>z
                 subtitle
                 <% } %>
-            </div>
+            ">
+                <% if (config.subtitle && config.subtitle.length > 0) { %>
+                    <%= config.subtitle %>
+                <% } else { %>z
+                subtitle
+                <% } %>
+            </h1>
 
             <div class="description center-align">
                 <% if (theme.subtitle.enable) { %>
@@ -31,15 +189,15 @@
                             .then(function (res) {
                                 return res.json();
                             })
-                                .then(function (data) {
-                                    var hitokoto = document.getElementById('hitokoto');
-                                    hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
-                                })
-                                .catch(function (err) {
-                                    console.error(err);
-                                })
-                        </script>
-                        <strong style="font-size: large;"><p id="hitokoto">正在加载一言...</p></strong>
+                            .then(function (data) {
+                                var hitokoto = document.getElementById('hitokoto');
+                                hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
+                            })
+                            .catch(function (err) {
+                                console.error(err);
+                            })
+                    </script>
+                    <strong style="font-size: large;"><p id="hitokoto">正在加载一言...</p></strong>
                 <% } %>
             </div>
         </div>
@@ -47,13 +205,13 @@
 </div>
 
 <% if (theme.banner.enable) { %>
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    </script>
 <% } else { %>
-<script>
-    $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
-</script>
+    <script>
+        $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
+    </script>
 <% } %>
