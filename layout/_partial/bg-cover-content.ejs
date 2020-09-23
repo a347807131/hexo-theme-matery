@@ -23,23 +23,27 @@
 
     .glitch:before {
         left: -1px;
-        text-shadow: 1px 0 #ff3f1a
+        text-shadow: 4px 0 #ff3f1a;
+        animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
+
     }
 
     .glitch:after {
         left: 1px;
-        text-shadow: -1px 0 #00a7e0
-    }
-
-    .glitch:hover:before {
-        text-shadow: 4px 0 #ff3f1a;
-        animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
-    }
-
-    .glitch:hover:after {
         text-shadow: -5px 0 #00a7e0;
         animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse
+
     }
+
+    /*.glitch:hover:before {*/
+    /*    text-shadow: 4px 0 #ff3f1a;*/
+    /*    animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse*/
+    /*}*/
+
+    /*.glitch:hover:after {*/
+    /*    text-shadow: -5px 0 #00a7e0;*/
+    /*    animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse*/
+    /*}*/
 
     @-webkit-keyframes glitch-loop-1 {
         0% {
