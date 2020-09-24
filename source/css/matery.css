@@ -34,11 +34,12 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: #f0f3ee;
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto;
 }
 
 h1 {
@@ -237,8 +238,10 @@ mark {
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    background-color: rgba(238, 232, 232, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .card .card-image img {
