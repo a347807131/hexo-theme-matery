@@ -1181,7 +1181,8 @@ article .article-tags .chip {
     padding: 0.5rem 0.8rem;
     border: 1px solid #eee;
     line-height: 2;
-    transition: box-shadow 0.3s ease-in-out
+    transition: box-shadow 0.3s ease-in-out;
+    border-left: 3px solid #ff1700;
 }
 
 #artDetail .reprint:hover {
