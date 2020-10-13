@@ -66,7 +66,7 @@
                         <i class="far fa-eye fa-fw"></i><%- __('readCount') %>:&nbsp;&nbsp;
                         <span id="busuanzi_value_page_pv"></span>
                     </div>
-				<% } %>
+                    <% } %>
             </div>
         </div>
         <hr class="clearfix">
@@ -75,7 +75,9 @@
                 <%- page.content %>
             </div>
             <hr/>
-
+            <% if (theme.reward && theme.reward.enable) { %>
+                <%- partial('_partial/reward') %>
+            <% } %>
             <%- partial('_partial/reprint-statement') %>
 
             <div class="tag_share" style="display: block;">
@@ -98,9 +100,6 @@
                     <%- partial('_partial/share') %>
                 </div>
             </div>
-            <% if (theme.reward && theme.reward.enable) { %>
-                <%- partial('_partial/reward') %>
-            <% } %>
         </div>
     </div>
 
