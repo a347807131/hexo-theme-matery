@@ -89,8 +89,8 @@
                             </span>
                             <span class="publish-author">
                                 <% if (post.categories && post.categories.length > 0) { %>
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                <% post.categories.forEach(category => { %>
+                                    <i class="fas fa-bookmark fa-fw icon-category" style="color: #0ba360;"></i>
+                                    <% post.categories.forEach(category => { %>
                                 <a href="<%- url_for(category.path) %>" class="post-category">
                                     <%- category.name %>
                                 </a>
@@ -99,21 +99,22 @@
                                 <i class="fas fa-user fa-fw"></i>
                                 <%- post.author %>
                                 <% } else { %>
-                                <i class="fas fa-user fa-fw"></i>
-                                <%- config.author %>
+                                    <i class="fas fa-user fa-fw"></i>
+                                    <%- config.author %>
                                 <% } %>
                             </span>
                         </div>
                     </div>
 
                     <% if(post.tags && post.tags.length > 0) { %>
-                    <div class="card-action article-tags">
-                        <% post.tags.forEach(tag => { %>
-                        <a href="<%- url_for(tag.path) %>">
-                            <span class="chip bg-color"><%= tag.name %></span>
-                        </a>
-                        <% }); %>
-                    </div>
+                        <div class="card-action article-tags">
+                            <% post.tags.forEach(tag => { %>
+                                <a href="<%- url_for(tag.path) %>" class="chip bg-color">
+                                    <i class="fas fa-tags" style="color: white"></i>
+                                    <span style="color: white"><%= tag.name %></span>
+                                </a>
+                            <% }); %>
+                        </div>
                     <% } %>
                 </div>
             </div>
