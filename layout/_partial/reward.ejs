@@ -93,7 +93,7 @@
 </style>
 <div>
     <div id="reward-container">
-        <div>If this post is helpful to you, why not reward me?</div>
+        <div style="padding-bottom: 10px">If this post is helpful to you, why not reward me?</div>
         <button id="reward-button" disable="enable"
                 onclick="qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
             Reward
@@ -102,11 +102,13 @@
             <div style="display:inline-block">
                 <img src="<%- theme.jsDelivr.url %><%- url_for(theme.reward.wechat) %>" class="reward-img"
                      alt="微信打赏二维码">
-                <p>微信支付</p></div>
+                <p>Wechat Pay</p>
+            </div>
             <div style="display:inline-block">
                 <img src="<%- theme.jsDelivr.url %><%- url_for(theme.reward.alipay) %>" class="reward-img"
                      alt="支付宝打赏二维码">
-                <p>支付宝</p></div>
+                <p>Alipay</p>
+            </div>
         </div>
     </div>
 </div>
