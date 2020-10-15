@@ -23,9 +23,6 @@ menu:
       - name: Tags
         url: /tags
         icon: fas fa-tags
-      - name: Toolbox
-        url: /webstack
-        icon: fas fa-car
   # 二级菜单写法如下
   Medias:
     icon: fas fa-list

@@ -2329,3 +2329,8 @@ footer .copy-right {
     padding: 0px;
     margin: 0px;
 }
+
+.en-text {
+    font-family: Comic Sans MS, Helvetica Neue, Microsoft Yahei, -apple-system, sans-serif !important;
+    font-size: 20px;
+}
