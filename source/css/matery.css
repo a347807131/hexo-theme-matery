@@ -72,6 +72,13 @@ h2 {
 }
 
 h3 {
+    margin: 38px 0 15px -4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+
+#articleContent h3 {
     margin-left: -2.5%;
     font-weight: bold;
     font-size: 140%;
