@@ -49,6 +49,14 @@ h1 {
     line-height: 2.0rem;
 }
 
+#final-flag a {
+    color: white;
+}
+
+#final-flag a:after {
+    color: #8aa9ae;
+}
+
 h2 {
     left: -12px;
     text-shadow: #cdcdcd 0 0 1px;
@@ -936,11 +944,7 @@ article a {
     border-bottom: #0D0A0A solid 2px;
 }
 
-h2 {
-
-}
-
-#articleContent h2 a:after {
+h2 a:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -955,7 +959,7 @@ h2 {
     content: "";
 }
 
-#articleContent h2:hover {
+h2:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2), 0 3px 2px -2px rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .2);
     transform: translateY(-1px)
 }
@@ -978,18 +982,6 @@ h2 {
     box-shadow: 0 0 5px #59e9a2;
 }
 
-/*#articleContent h3 a:after{*/
-/*    content: "";*/
-/*    left: 9px;*/
-/*    top: 7px;*/
-/*    width: 11px;*/
-/*    height: 11px;*/
-/*    background-color: #fff;*/
-/*    position: absolute;*/
-/*    border-bottom: none;*/
-/*    border-radius: 50%;*/
-/*    z-index: 20;*/
-/*}*/
 #articleContent h3:hover {
     text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
     border-bottom: #0D0A0A solid;

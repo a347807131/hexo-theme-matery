@@ -74,11 +74,12 @@
             </div>
         </div>
         <hr class="clearfix">
-        <div class="card-content article-card-content">
+        <div id="post-content" class="card-content article-card-content">
             <div id="articleContent">
                 <%- page.content %>
             </div>
             <hr/>
+            <h2 id="final-flag" style="background-color: #f44336;"><a>Final</a></h2>
             <% if (theme.reward && theme.reward.enable) { %>
                 <%- partial('_partial/reward') %>
             <% } %>
