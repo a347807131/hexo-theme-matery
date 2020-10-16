@@ -50,24 +50,47 @@ h1 {
 }
 
 h2 {
-    margin: 42px 0 18px -5px;
-    font-size: 1.8rem;
+    left: -12px;
+    text-shadow: #cdcdcd 0 0 1px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    margin-left: -53px;
+    padding: 7px 30px 7px 32px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    color: #f8f8f8;
+    font-size: 1em;
     font-weight: bold;
+    transition: all .3s;
+    border-color: #8aa9ae;
+    background-color: #59bee9;
+    text-align: left;
     line-height: 1.8rem;
 }
 
 h3 {
-    margin: 38px 0 15px -4px;
-    font-size: 1.6rem;
+    margin-left: -2.5%;
     font-weight: bold;
-    line-height: 1.7rem;
+    font-size: 140%;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+    border-bottom: 3px dashed #efefef;
+    padding-bottom: 3px;
+    transition: all .3s;
+    margin-top: 4px;
 }
 
 h4 {
-    margin: 32px 0 12px -4px;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.45rem;
+    transition: all .3s;
+    margin-left: -2.1%;
+    margin-top: 0.85rem;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+    border-bottom: 2px dashed #efefef;
 }
 
 h5 {
@@ -892,9 +915,6 @@ article a {
     text-transform: none !important;
 }
 
-#articleContent h1, #articleContent h2, #articleContent h3, #articleContent h4 {
-
-}
 
 #articleContent hr {
     width: calc(50% - 4px);
@@ -902,10 +922,6 @@ article a {
 }
 
 #articleContent h1 {
-
-}
-
-#articleContent h2 {
     text-align: center;
     width: 50%;
     margin-left: 25%;
@@ -913,28 +929,11 @@ article a {
     border-bottom: #0D0A0A solid 2px;
 }
 
-#articleContent h3 {
-    left: -12px;
-    text-shadow: #cdcdcd 0 0 1px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-    margin-left: -53px;
-    padding: 7px 30px 7px 32px;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-    color: #f8f8f8;
-    font-size: 1em;
-    font-weight: bold;
-    transition: all .3s;
-    border-color: #8aa9ae;
-    background-color: #59bee9;
-    text-align: left;
+h2 {
+
 }
 
-#articleContent h3:after {
+#articleContent h2 a:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -947,6 +946,91 @@ article a {
     border-bottom: 1em solid transparent;
     border-left: 0 solid transparent;
     content: "";
+}
+
+#articleContent h2:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2), 0 3px 2px -2px rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .2);
+    transform: translateY(-1px)
+}
+
+#articleContent h3 a {
+    content: "";
+    visibility: visible;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50% 50% 50% 0;
+    background: #59e9a2;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 5px;
+    margin-right: 9px;
+    margin-bottom: -3px;
+    transition: all .8s;
+    opacity: .7;
+    box-shadow: 0 0 5px #59e9a2;
+}
+
+/*#articleContent h3 a:after{*/
+/*    content: "";*/
+/*    left: 9px;*/
+/*    top: 7px;*/
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    background-color: #fff;*/
+/*    position: absolute;*/
+/*    border-bottom: none;*/
+/*    border-radius: 50%;*/
+/*    z-index: 20;*/
+/*}*/
+#articleContent h3:hover {
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
+    border-bottom: #0D0A0A solid;
+}
+
+#articleContent h3:hover a {
+    opacity: 1;
+    transform: rotate(270deg)
+}
+
+#articleContent h4 a {
+    visibility: visible;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: -4px;
+    transition: all .3s;
+}
+
+#articleContent h4 a:before {
+    content: "";
+    top: 7px;
+    box-shadow: 0 0 5px #59e9a2;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #59e9a2;
+    opacity: .7;
+    position: absolute;
+    border-bottom: none;
+    border-radius: 50% 0;
+    transition: all .5s;
+    right: 100px;
+}
+
+#articleContent h4:hover {
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, .2);
+    border-bottom: #0D0A0A solid 2px;
+}
+
+#articleContent h4:hover a {
+    transform: rotate(180deg);
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    visibility: visible;
 }
 
 article a:hover {
