@@ -933,7 +933,7 @@ article a {
 
 #articleContent hr {
     width: calc(50% - 4px);
-    margin-left: 25%;
+    margin: 4em auto;
 }
 
 #articleContent h1 {
