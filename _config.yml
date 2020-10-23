@@ -199,7 +199,7 @@ cursor:
   enable: true
 # 动态标题特效
 visible:
-  enable: true
+  enable: false
   title:
     #离开
     off: Σ(っ °Д °;)っ喔哟，崩溃啦！
