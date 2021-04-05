@@ -4,9 +4,6 @@ menu:
   Home:
     url: /
     icon: fas fa-home
-  Guestbook:
-    url: /contact
-    icon: fas fa-comments
   Friends:
     url: /friends
     icon: fas fa-address-book
