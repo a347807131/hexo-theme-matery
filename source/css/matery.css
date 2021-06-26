@@ -1321,8 +1321,10 @@ article .article-tags .chip {
     font-size: 1.2rem;
     line-height: 1.85rem;
     letter-spacing: 2px;
+    text-align:justify;
     font-family: Microsoft Yahei, Roboto, sans-serif;
     text-shadow: #7b7a7a 0 0 1px;
+    text-indent: 2rem;
 }
 
 #articleContent blockquote p {
